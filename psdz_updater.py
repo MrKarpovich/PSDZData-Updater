@@ -1,5 +1,6 @@
 import os
 import json
+import hashlib
 import shutil
 from pathlib import Path
 import tkinter as tk
@@ -218,8 +219,6 @@ class PSDZApp:
 # ========== ЗАПУСК ==========
 
 if __name__ == "__main__":
-    import hashlib  # убедимся, что импортировано
-
     root = tk.Tk()
     app = PSDZApp(root)
     root.mainloop()
